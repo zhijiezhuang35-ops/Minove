@@ -1,0 +1,197 @@
+import 'package:flutter/material.dart';
+
+class ReliefSoothingstart extends StatefulWidget {
+  const ReliefSoothingstart({super.key});
+
+  @override
+  State<ReliefSoothingstart> createState() => _ReliefSoothingstart();
+}
+
+class _ReliefSoothingstart extends State<ReliefSoothingstart> {
+  bool forsolacet = true;
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: double.infinity,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/images/ncxziucib.png"),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Container(
+              width: 118,
+              height: 118,
+              decoration: BoxDecoration(),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/minovelogo.png"),
+                  ),
+                  borderRadius: BorderRadius.circular(24),
+                ),
+              ),
+            ),
+
+            SizedBox(
+              height: 89,
+              child: DecoratedBox(decoration: BoxDecoration()),
+            ),
+
+            Container(
+              width: 236,
+              height: 56,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Color.fromRGBO(255, 255, 255, 1),
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                    width: 3,
+                  ),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Align(
+                  alignment: AlignmentDirectional(0, 0),
+                  child: Text(
+                    'Log out',
+                    style: TextStyle(
+                      fontFamily: 'FredokaOne',
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromRGBO(174, 106, 66, 1),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 24,
+              child: DecoratedBox(decoration: BoxDecoration()),
+            ),
+            Container(
+              width: 236,
+              height: 56,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Color.fromRGBO(255, 255, 255, 1),
+                  width: 2,
+                ),
+                borderRadius: BorderRadius.circular(32),
+              ),
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                    width: 3,
+                  ),
+                  borderRadius: BorderRadius.circular(32),
+                ),
+                child: Align(
+                  alignment: AlignmentDirectional(0, 0),
+                  child: Text(
+                    'Delete account',
+                    style: TextStyle(
+                      fontFamily: 'FredokaOne',
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                      color: Color.fromRGBO(174, 106, 66, 1),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 100,
+              child: DecoratedBox(decoration: BoxDecoration()),
+            ),
+            Flex(
+              direction: Axis.horizontal,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Checkbox(
+                  value: forsolacet,
+                  activeColor: Color.fromRGBO(174, 106, 66, 1),
+                  checkColor: Color.fromRGBO(255, 255, 255, 1),
+                  side: BorderSide(
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                    width: 2,
+                  ),
+                  onChanged: (value) {
+                    setState(() {
+                      forsolacet = value ?? false;
+                    });
+                  },
+                ),
+                Text(
+                  'Agree with  ',
+                  style: TextStyle(
+                    fontFamily: 'PatrickHand',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                  ),
+                ),
+                Text(
+                  'User Agreement',
+                  style: TextStyle(
+                    fontFamily: 'PatrickHand',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+                Text(
+                  ' and ',
+                  style: TextStyle(
+                    fontFamily: 'PatrickHand',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                  ),
+                ),
+                Text(
+                  'Privacy Policy',
+                  style: TextStyle(
+                    fontFamily: 'PatrickHand',
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                    color: Color.fromRGBO(174, 106, 66, 1),
+                    decoration: TextDecoration.underline,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+              child: DecoratedBox(decoration: BoxDecoration()),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

@@ -9,11 +9,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  waterfall_flow: 3.1.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: FredokaOne
+      fonts:
+        - asset: assets/fonts/FredokaOne-Regular.ttf
+    - family: PatrickHand
+      fonts:
+        - asset: assets/fonts/PatrickHand-Regular.ttf
